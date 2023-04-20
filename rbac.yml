@@ -1,3 +1,9 @@
+kind: ClusterRole
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: flannel
+rules:
+- apiGroups:
   - ""
   resources:
   - pods
@@ -30,3 +36,9 @@ subjects:
 - kind: ServiceAccount
   name: flannel
   namespace: kube-system
+
+
+
+
+
+
